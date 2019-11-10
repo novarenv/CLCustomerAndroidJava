@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity"
+    android:background="@drawable/image_background"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_decoration"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_decoration"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/calibrapps-logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calibrapps"
+                android:textSize="50sp"
+                android:letterSpacing="0.1"
+                android:fontFamily="@font/pt_sans_b"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/calibrapps-description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_application"
+                android:textSize="20sp"
+                android:fontFamily="@font/pt_sans_b"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

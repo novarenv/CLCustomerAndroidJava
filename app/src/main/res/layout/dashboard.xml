@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.dashboard.DashboardFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/bg_dashboard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/greetUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Halo,"
+                        android:textColor="@color/colorSubtitleDark"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/pt_sans_regular"/>
+                    <TextView
+                        android:id="@+id/tv_customer_name_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Customer"
+                        android:textColor="@color/colorTitleDark"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/pt_sans_bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PT. Anu Sejahtera"
+                        android:textColor="@color/colorTitleDark"
+                        android:textSize="20sp"
+                        android:fontFamily="@font/pt_sans_bold"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ic_notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="28dp"
+                    android:src="@drawable/ic_alert"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvProgressOrders"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="16dp"
+                app:contentPadding="20dp"
+                app:contentPaddingTop="15dp"
+                app:contentPaddingBottom="10dp"
+                android:layout_gravity="center_horizontal">
+                <RelativeLayout
+                    android:id="@+id/orderCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/orderCardHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/orderProgress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Progress Order"
+                            android:textColor="@color/colorTitleLight"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/pt_sans_bold"/>
+                        <TextView
+                            android:id="@+id/dateOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/orderProgress"
+                            android:text="5 Oktober 2020"
+                            android:textColor="@color/colorDate"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/pt_sans_regular"
+                            android:gravity="end"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/progressPackage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/orderCardHeader"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/colorSubtitleLight"
+                        android:text="2 Selesai dari 5 Barang"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/pt_sans_regular" />
+
+                    <LinearLayout
+                        android:id="@+id/progressBar"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="24dp"
+                        android:layout_height="10px"
+                        android:weightSum="1"
+                        android:layout_below="@+id/progressPackage">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:background="#F53C56"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.04"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:background="#EEE"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.96"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/progressBar"
+                        android:layout_alignParentBottom="true">
+                        <TextView
+                            android:id="@+id/getDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Lihat Detail"
+                            android:textColor="@color/colorSubtitleLight"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/pt_sans_regular"/>
+
+                        <ImageView
+                            android:id="@+id/moreDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_next"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Transaksi"
+                android:textColor="@color/colorTitleLight"
+                android:textSize="20sp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/pt_sans_bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@drawable/ic_bottom_bar"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/bottom_bar_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="12dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/pt_sans_regular"
+                android:text="Beranda"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:paddingTop="16dp"
+            android:paddingLeft="44dp"
+            android:paddingRight="44dp"
+            android:paddingBottom="16dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            tools:ignore="NotSibling">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scan"
+                android:layout_marginTop="20dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/pt_sans_regular"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_bar_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:padding="12dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_profile"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:layout_marginTop="4dp"
+                android:textColor="#fff"
+                android:fontFamily="@font/pt_sans_regular"
+                android:textSize="12sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

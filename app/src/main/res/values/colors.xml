@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#3F4469</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--Dashboard-->
+    <color name="colorTitleDark">#FFFFFF</color>
+    <color name="colorSubtitleDark">#E2E8ED</color>
+    <color name="colorTitleLight">#374379</color>
+    <color name="colorSubtitleLight">#666D9C</color>
+    <color name="colorDate">#3D929A</color>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CL Customer Java</string>
+    <string name="notif_detail_front">Barang XXX untuk Nomor Order 2XXXX telah selesai dikerjakan</string>
+    <string name="image_decoration">image decoration</string>
+    <string name="calibrapps">CALIBRAPPS</string>
+    <string name="customer_application">Customer Application</string>
+    <string name="login_button">login button</string>
+    <string name="login">Login</string>
+    <string name="register_button">register button</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="masukkan_email">Masukkan email</string>
+    <string name="password">Password</string>
+    <string name="masukkan_password">Masukkan password</string>
+    <string name="lupa_password">Lupa password</string>
+    <string name="version">Calibrapps Lab for Customer - V.1.0</string>
+</resources>
